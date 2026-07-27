@@ -1,19 +1,23 @@
 {
-  "name": "vue-rough",
+  "name": "@shaunabanana/vue-rough",
   "version": "2.0.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "A small components library to use Rough.js in Vue.",
   "homepage": "https://vue-rough.neustadt.dev",
   "bugs": {
-    "url": "https://github.com/dneustadt/vue-rough/issues"
+    "url": "https://github.com/shaunabanana/vue-rough/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dneustadt/vue-rough.git"
+    "url": "git+https://github.com/shaunabanana/vue-rough.git"
   },
   "license": "MIT",
   "author": "David Neustadt <d@neustadt.dev> (https://neustadt.dev)",
   "contributors": [
-    "David Neustadt <d@neustadt.dev>"
+    "David Neustadt <d@neustadt.dev>",
+    "Shengchen Zhang <hello@shengchen.io> (https://github.com/shaunabanana)"
   ],
   "main": "dist/VueRough.umd.min.js",
   "unpkg": "dist/VueRough.umd.min.js",

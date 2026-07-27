@@ -14,7 +14,7 @@ $ npm install vue-rough
 
 ```js
 import { createApp } from 'vue';
-import VueRough from 'vue-rough';
+import VueRough from '@shaunabanana/vue-rough';
 import App from './App.vue';
 
 createApp(App).use(VueRough).mount('#app');
