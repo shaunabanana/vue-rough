@@ -3,12 +3,12 @@ import * as components from './components';
 /**
  * Install all components
  *
- * @param  {Vue}  Vue The Vue object
+ * @param  {App}  app The Vue application
  * @return {void}
  */
-export function install(Vue) {
+export function install(app) {
     Object.keys(components).forEach((name) => {
-        Vue.component(name, components[name]);
+        app.component(name, components[name]);
     });
 }
 

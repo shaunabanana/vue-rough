@@ -29,18 +29,23 @@ export default {
         };
     },
     mounted() {
+        const rough = this.$parent.rough;
+
+        if (!rough.svg) this.$parent.register(this);
+
         this.$watch('$props', () => { this.handler() }, { deep: true });
         this.handler();
     },
     render() {
-        return this.$scopedSlots;
+        return null;
     },
-    destroyed() {
+    beforeUnmount() {
         const rough = this.$parent.rough;
         if (rough.svg) {
             if (this.element) this.$parent.remove(this.element);
         } else {
-            this.$parent.$emit('rerender');
+            this.$parent.unregister(this);
+            this.$parent.clearCanvas();
         }
     },
     methods: {
@@ -66,7 +71,7 @@ export default {
 
                 this.$parent.append(this.element);
             } else {
-                this.$parent.$emit('rerender');
+                this.$parent.clearCanvas();
             }
         }
     }

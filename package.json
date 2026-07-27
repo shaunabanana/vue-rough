@@ -1,6 +1,6 @@
 {
   "name": "vue-rough",
-  "version": "1.1.0",
+  "version": "2.0.0",
   "description": "A small components library to use Rough.js in Vue.",
   "homepage": "https://vue-rough.neustadt.dev",
   "bugs": {
@@ -18,19 +18,22 @@
   "main": "dist/VueRough.umd.min.js",
   "unpkg": "dist/VueRough.umd.min.js",
   "module": "dist/VueRough.common.js",
+  "types": "index.d.ts",
   "scripts": {
     "build": "vue-cli-service build --target lib --name VueRough src/index.js && rm ./dist/demo.html"
   },
   "dependencies": {
-    "roughjs": "^4.3.1"
+    "roughjs": "^4.6.6"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "~4.4.0",
-    "@vue/cli-plugin-eslint": "~4.4.0",
-    "@vue/cli-service": "~4.4.0",
-    "roughjs": "^4.3.1"
+    "@vue/cli-plugin-babel": "~5.0.8",
+    "@vue/cli-service": "~5.0.8",
+    "@vue/compiler-sfc": "^3.2.0",
+    "roughjs": "^4.6.6",
+    "vue": "^3.2.0"
   },
   "peerDependencies": {
-    "roughjs": "^4.3.1"
+    "roughjs": "^4.6.6",
+    "vue": "^3.2.0"
   }
 }

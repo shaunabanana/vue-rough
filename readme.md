@@ -13,9 +13,11 @@ $ npm install vue-rough
 ```
 
 ```js
+import { createApp } from 'vue';
 import VueRough from 'vue-rough';
+import App from './App.vue';
 
-Vue.use(VueRough);
+createApp(App).use(VueRough).mount('#app');
 ```
 
 ## Container Components
@@ -126,4 +128,3 @@ for a full list of options. Components must be placed inside `rough-canvas` or `
     d="M0 0l128 220.8L256 0h-51.2L128 132.48 50.56 0H0z"
 />
 ```
-
